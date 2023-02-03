@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		window.onload=function(){
+
+			
+			function fattorialeIterativo(n){
+				let fattoriale = 1
+				for (let i = 0; i <n; i++) {
+					fattoriale = fattoriale * (i+1)
+				}
+				return fattoriale
+			}
+
+			console.log(fattorialeIterativo)
+
+			function fattorialeRicorsivo(n){
+				if(n==1){
+					return 1
+				} else{
+					let v = n* fattorialeRicorsivo(n-1)
+					return v
+				}
+
+			}
+
+			console.log(fattorialeIterativo(5))
+			console.log("---")
+			console.log(fattorialeRicorsivo(5))
+
+			function sommaNIterativo(n){
+				let somma = 0
+				for (let i = 0; i <= n; i++) {
+					somma = somma + i
+				}
+				return somma;
+			}
+
+			function sommaNRicorsivo(n){
+
+			}
+
+
+
+		}
+
+	</script>
+
+</body>
+
+</html>
